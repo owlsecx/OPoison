@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-ARP Spoof & MITM Detector
+OPoison is an ARP spoofing and man-in-the-middle detection engine for Linux. It combines live network monitoring, ARP scanning, traffic sniffing and gateway protection to detect and alert on poisoning attempts, and supports forensics and reporting.
 
 ---
 
 ## ✨ Features
 
-- Detect ARP poisoning and MITM attacks: live monitor, ARP scan, baseline and gateway guardian
+- Live monitor that detects ARP spoofing and MITM activity
+- ARP scanning of the local network
+- Traffic sniffer for inspecting network activity
+- Gateway Guardian mode to watch the default gateway
+- Alerting and forensic reporting of detections
+- Offline sandboxed self-test
 
 ---
 
@@ -38,7 +43,10 @@ ARP Spoof & MITM Detector
 ## 🚀 Usage
 
 ```bash
-./OPoison
+./OPoison --monitor
+./OPoison --scan
+./OPoison --guardian
+./OPoison --help
 ```
 
 ---
